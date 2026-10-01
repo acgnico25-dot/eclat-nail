@@ -212,6 +212,10 @@ a {
   margin: 4px 0;
 }
 
+.intro-copy {
+  font-size: 24px;
+}
+
 .section-title {
   margin: 0 0 34px;
   font-family: var(--font-title);
@@ -672,17 +676,63 @@ a {
   }
 
   .outline-button.hero-button {
-    right: 50%;
-    bottom: 20px;
-    min-width: 220px;
-    min-height: 56px;
-    border-radius: 5px;
-    font-size: 16px;
-    transform: translateX(50%);
+    right: 20px;
+    bottom: 18px;
+    min-width: 116px;
+    min-height: 36px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: rgba(247, 244, 242, 0.78);
+    font-size: 12px;
+    transform: none;
   }
 
-  .intro h2 {
-    font-size: 19px;
+  .intro {
+    padding: 72px 24px 68px;
+    width: min(calc(100% - 32px), 400px);
+  }
+
+  .intro h1 {
+    margin: 0 0 20px;
+    max-width: none;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+  .intro-copy {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+  }
+
+  .intro-copy p {
+    display: inline;
+    margin: 0;
+  }
+
+  .intro-copy .intro-notes {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .intro-notes span {
+    display: block;
+  }
+
+  .instagram-button {
+    width: 210px;
+    min-height: 58px;
+    font-size: 20px;
+  }
+
+  .design {
+    padding-bottom: 92px;
   }
 
   .menu-grid {
@@ -732,12 +782,47 @@ a {
     right: -18vw;
   }
 
+  .recruit {
+    position: static;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+    align-items: stretch;
+    min-height: 0;
+    height: 220px;
+  }
+
   .recruit-photo {
-    height: 270px;
+    height: 100%;
+  }
+
+  .recruit-photo img {
+    object-position: left center;
+  }
+
+  .recruit-copy {
+    position: static;
+    display: flex;
+    width: auto;
+    margin: 0;
+    padding: 20px 12px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    text-align: center;
+  }
+
+  .recruit-copy p {
+    margin: 0 0 2px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
   }
 
   .recruit-copy h2 {
-    font-size: 48px;
+    font-size: 32px;
+    line-height: 1;
   }
 
   .access {
